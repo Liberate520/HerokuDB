@@ -17,7 +17,7 @@ public class PersonRepository {
     }
 
     public int updatePerson(Person person){
-        return jdbcTemplate.update("UPDATE \"ROOMS\" SET \"NAME\" = ? WHERE \"ID\" = ?", person.getName(), person.getId());
+        return jdbcTemplate.update("UPDATE \"ROOMS\" SET \"PLAYER\" = ? WHERE \"ID\" = ?", person.getName(), person.getId());
     }
 
     public int deletePerson(Integer id){
