@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="744dd618-60b5-4820-b3f9-7c55ce147abb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/samsung/PhoneBook/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/samsung/App/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/samsung/PhoneBook/PhoneBookApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/samsung/App/MainApplication.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,22 +50,22 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="PhoneBookApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="PlayerIP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.samsung.PhoneBook.*" />
+          <option name="PATTERN" value="ru.samsung.App.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.samsung.PhoneBook.PhoneBookApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.samsung.App.MainApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.PhoneBookApplication" />
+        <item itemvalue="Spring Boot.MainApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -76,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638280249186</updated>
-      <workItem from="1638280254476" duration="3151000" />
+      <workItem from="1638280254476" duration="4539000" />
     </task>
     <servers />
   </component>

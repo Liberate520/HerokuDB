@@ -1,0 +1,1 @@
+web:node src/main/java/ru/samsung/App/MainApplication.java
