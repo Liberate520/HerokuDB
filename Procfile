@@ -1,1 +1,1 @@
-web:node src/main/ru/samsung/App/MainApplication.java
+web: java $JAVA_OPTS -cp target/classes:target/dependency/* ru.samsung.MainApplication

@@ -1,4 +1,4 @@
-package ru.samsung.App;
+package ru.samsung;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
