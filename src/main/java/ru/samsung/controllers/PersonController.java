@@ -12,49 +12,36 @@ import java.util.List;
 @RestController
 @RequestMapping("person")
 public class PersonController {
+
     @Autowired
     private PersonRepository person;
-    @RequestMapping(value = "/create", method= RequestMethod.PUT, consumes="text/plain")
+
+    @RequestMapping(value = "/create", method= RequestMethod.POST)
     public int createPerson(@RequestBody String param){
-        String name = null;
-        String ip = null;
-        try{
-            JSONObject json = new JSONObject(param);
-            name = json.getString("name");
-            ip = json.getString("ip");
-        }catch(JSONException e){
-            e.getLocalizedMessage();
-            return 0;
+        if (!param.contains("ip=") || !param.contains("name=")){
+            return -1;
         }
+        String name = param.substring(param.indexOf("name=")+5, param.indexOf("&"));
+        param = param.substring(param.indexOf("&"));
+        String ip = param.substring(param.indexOf("ip=")+3);
         return person.createPerson(name, ip);
     }
 
-    @RequestMapping(value = "update", method=RequestMethod.POST,consumes="text/plain")
-    public int updatePerson(@RequestBody String param){
-        Person p = new Person();
-        try{
-            JSONObject json = new JSONObject(param);
-            p.setId(json.getInt("id"));
-            p.setName(json.getString("name"));
-            p.setIp(json.getString("ip"));
-        }catch(JSONException e){
-            e.getLocalizedMessage();
-            return 0;
+    @RequestMapping(value="/delete", method=RequestMethod.POST)
+    public int deletePerson(@RequestBody String param){
+        if (!param.contains("id=")){
+            return -1;
         }
-        return person.updatePerson(p);
-    }
-
-    @RequestMapping(value="{id}", method=RequestMethod.DELETE)
-    public int deletePerson(@PathVariable Integer id){
+        int id = Integer.parseInt(param.substring(param.indexOf("id=")+3));
         return person.deletePerson(id);
     }
 
-    @RequestMapping(value = "/getperson", method=RequestMethod.GET)
+    @RequestMapping(value = "/getperson", method=RequestMethod.POST)
     public Person getPerson(@RequestParam("id") Integer id){
         return person.getPerson(id);
     }
 
-    @RequestMapping(value = "/getpersons", method=RequestMethod.GET)
+    @RequestMapping(value = "/getpersons", method=RequestMethod.POST)
     public List<Person> getPersons(){
         return person.getPersons();
     }

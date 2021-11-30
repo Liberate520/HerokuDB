@@ -13,7 +13,7 @@ public class PersonRepository {
     private JdbcTemplate jdbcTemplate;
 
     public int createPerson(String name, String ip){
-        return jdbcTemplate.update("INSERT INTO \"ROOMS\" (\"PLAYER\", \"IP\") VALUES(?)", name, ip);
+        return jdbcTemplate.update("INSERT INTO \"ROOMS\" (\"PLAYER\", \"IP\") VALUES(?,?)", name, ip);
     }
 
     public int updatePerson(Person person){

@@ -4,7 +4,12 @@
     <list default="true" id="744dd618-60b5-4820-b3f9-7c55ce147abb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/samsung/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/samsung/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/samsung/controllers/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/samsung/controllers/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/samsung/repository/PersonMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/samsung/repository/PersonMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/samsung/repository/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/samsung/repository/PersonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/samsung/controllers/PersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/samsung/controllers/PersonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/samsung/repository/PersonMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/samsung/repository/PersonMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/samsung/repository/PersonRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/samsung/repository/PersonRepository.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638280249186</updated>
-      <workItem from="1638280254476" duration="12618000" />
+      <workItem from="1638280254476" duration="20495000" />
     </task>
     <servers />
   </component>

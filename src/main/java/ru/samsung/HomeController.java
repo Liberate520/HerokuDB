@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeController {
     @RequestMapping("/")
     public String index() {
-        System.out.println("Тест логов");
         return "Привет, мир!";
     }
 }
